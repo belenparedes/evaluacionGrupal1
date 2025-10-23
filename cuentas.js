@@ -11,6 +11,21 @@ cargar=function(){
 }
 
 mostrarCuentas=function(){
+    let compTabla=document.getElementById("mostrarTabla");
+    let tabla="<table border='1'>";
+  tabla+="<tr><th>NUMERO CUENTA</th>"+
+            "<th>NOMBRE</th>"+
+            "<th>SALDO</th></tr>";
+            for(let i=0;i<cuentas.length;i++)
+            {
+                let cuenta=cuentas[i];
+                tabla+="<tr><td>"+cuenta.numeroCuenta+"</td>"+
+                          "<td>"+cuenta.nombre+" "+cuenta.apellido+"</td>"+
+                          "<td>"+cuenta.saldo+"</td>"+
+                       "</tr>";
+            }
+    tabla+="</table>";  
+    compTabla.innerHTML=tabla;
     /*
         Muestra en pantalla una tabla con la información de todas las cuentas del arreglo.
         Columnas: NUMERO CUENTA, NOMBRE, SALDO
