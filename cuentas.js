@@ -7,7 +7,7 @@ cargar=function(){
     mostrarComponente("divCuentas");
     ocultarComponente("divMovimientos");
     ocultarComponente("divTransacciones");
-    
+    mostrarCuentas();
 }
 
 mostrarCuentas=function(){
