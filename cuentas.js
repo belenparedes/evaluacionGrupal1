@@ -73,6 +73,19 @@ agregarCuenta=function(cuenta){
 }
 
 agregar=function(){
+    let numeroCuenta=recuperarTexto("txtNumeroCuenta");
+    let cedula=recuperarTexto("txtCedula");
+    let nombre=recuperarTexto("txtNombre");
+    let apellido=recuperarTexto("txtApellido");
+    let saldo=0.0;
+    let cuentaNueva=[];
+    cuentaNueva.numeroCuenta=numeroCuenta;
+    cuentaNueva.cedula=cedula;
+    cuentaNueva.nombre=nombre;
+    cuentaNueva.apellido=apellido;
+    cuentaNueva.saldo=saldo;
+    agregarCuenta(cuentaNueva);
+    mostrarCuentas();
     //Toma los valores de las cajas de texto, sin validaciones
     //Crea un objeto cuenta y agrega los atributos con los valores de las cajas respectivas
     //Invoca a agregarCuenta
