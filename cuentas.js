@@ -57,6 +57,17 @@ buscarCuenta=function(numeroCuenta){
     No retorna nada
 */
 agregarCuenta=function(cuenta){
+    let cuentaExistente=buscarCuenta(cuenta.numeroCuenta);
+    if(cuentaExistente==null)
+    {
+        cuentas.push(cuenta);
+        alert("CUENTA AGREGADA");
+    }
+    else
+    {
+        alert("CUENTA EXISTENTE");
+        return;
+    }
     //Si ya existe mostrar un alert CUENTA EXISTENTE
     //Si se agrega, mostrar un alert CUENTA AGREGADA
 }
