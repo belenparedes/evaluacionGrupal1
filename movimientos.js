@@ -6,12 +6,14 @@ movimientos=[
     {numeroCuenta:"02345211",monto:12.0,tipo:"D"},
 ]
 
+
 cargar=function(){
     mostrarComponente("divMovimientos");
     ocultarComponente("divCuentas");
     ocultarComponente("divTransacciones");
     
 }
+
 
 buscar = function(){
     let cuenta = recuperarTexto("nroCuenta");
