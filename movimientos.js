@@ -7,7 +7,7 @@ movimientos=[
 ]
 
 
-cargar=function(){
+cargarMovimiento=function(){
     mostrarComponente("divMovimientos");
     ocultarComponente("divCuentas");
     ocultarComponente("divTransacciones");
