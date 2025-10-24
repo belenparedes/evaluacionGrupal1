@@ -61,24 +61,43 @@
                 <div class="contenedorTexto">
                     <div class="etiquetaTexto">CAMPO 1</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtCuenta" />
                     </div>
                 </div>
                 <div class="contenedorAcciones">
-                    <input type="button" value="BUSCAR" />
+                    <input type="button" value="BUSCAR" onclick="ejecutarBusqueda();" />
                 </div>
                 <div class="contenedorTexto">
                     <div class="etiquetaTexto">CAMPO 2</div>
                     <div class="cajaTexto">
-                        <input type="text" class="caja" />
+                        <input type="text" class="caja" id="txtMonto" />
                     </div>
                 </div>
                 <div class="contenedorAcciones">
-                    <input type="button" value="DEPOSITAR" />
-                    <input type="button" value="RETIRAR" />
-                    
+                    <input type="button" value="DEPOSITAR" onclick="ejecutarDeposito();"/>
+                    <input type="button" value="RETIRAR" onclick="ejecutarRetirar();"/>
+
                 </div>
-              
+                <div><b>NUMERO DE CUENTA: </b>
+                    <div id="lblNumeroCuentaT"></div>
+                </div>
+                <div><b>CEDULA: </b>
+                    <div id="lblCedulaT"></div>
+                </div>
+                <div><b>NOMBRE:</b>
+                    <div id="lblNombreT"></div>
+                </div>
+                <div><b>APELLIDO: </b>
+                    <div id="lblApellidoT"></div>
+                </div>
+                <div><b>SALDO: </b>
+                    <div id="lblSaldoT"></div>
+                </div>
+                
+                <div id="lblError">
+
+                </div>
+
             </div>
         </div>
         <div class="contenido" id="divMovimientos">
